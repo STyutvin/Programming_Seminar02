@@ -8,4 +8,14 @@ while (i<months)
     deposit=(deposit/100)*1.5+deposit;
     i++;
 }
-Console.WriteLine($"Уважаемы Иван, Ваша остаток на счете по прошествии {months} месяцев(-ца) составит {deposit} рублей");
+Console.WriteLine($"Уважаемы клиент, Ваш остаток на счете по прошествии {months} месяцев(-ца) составит {deposit} рубля(-ей)");
+
+/*Если все-таки для начисления процентов используется неизменяемая сумма 1000 рулей, то решение ниже 
+double deposit=1000;
+double profit;
+Console.Write("Укажите срок, на который оформлен депозит в месяцах: ");
+int months = Convert.ToInt32(Console.ReadLine());
+double percents=deposit/100*1.5;
+profit=percents*months+deposit;
+Console.WriteLine($"Уважаемы клиент, Ваш остаток на счете по прошествии {months} месяцев(-ца) составит {profit} рубля(-ей)");
+*/
