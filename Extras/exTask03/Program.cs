@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//Задача 3. Иван в начале года открыл счет в банке, вложив 1000 руб. Через каждый месяц размер вклада увеличивается на 1.5% от имеющейся суммы. Определить размер депозита через n месяцев.
+double deposit=1000;
+int i=0;
+Console.Write("Укажите срок, на который оформлен депозит в месяцах: ");
+int months = Convert.ToInt32(Console.ReadLine());
+while (i<months)
+{
+    deposit=(deposit/100)*1.5+deposit;
+    i++;
+}
+Console.WriteLine($"Уважаемы Иван, Ваша остаток на счете по прошествии {months} месяцев(-ца) составит {deposit} рублей");
